@@ -1,0 +1,66 @@
+# New driver: developer sign-in → legal name → application checklist → add a vehicle → checklist shows it.
+# Needs a staging (or local) backend and a fresh account that has no role yet:
+#   maestro test -e EMAIL=<new account email> -e PASSWORD=<password> .maestro/02-application.yaml
+# Document upload is not covered: it needs the camera or a file on the device.
+appId: bd.rider.driver.dev
+name: Driver application
+tags: [e2e]
+---
+- clearState
+- launchApp
+- tapOn:
+    id: get-started
+- tapOn:
+    id: dev-sign-in-link
+- tapOn:
+    id: dev-email
+- inputText: ${EMAIL}
+- tapOn:
+    id: dev-password
+- inputText: ${PASSWORD}
+- tapOn:
+    id: dev-sign-in-submit
+
+- extendedWaitUntil:
+    visible:
+      id: name-input
+    timeout: 15000
+- tapOn:
+    id: name-input
+- inputText: "Maestro Test Driver"
+- tapOn:
+    id: name-continue
+
+- extendedWaitUntil:
+    visible: "Your application"
+    timeout: 15000
+- assertVisible:
+    id: submit-application
+    enabled: false
+
+- tapOn: "Add your vehicle"
+- extendedWaitUntil:
+    visible: "Vehicle type"
+    timeout: 10000
+- tapOn:
+    text: "Bike|Motorbike|CNG|Car"
+    index: 0
+- tapOn: "Make"
+- inputText: "Bajaj"
+- tapOn: "Model"
+- inputText: "Pulsar 150"
+- tapOn: "Colour"
+- inputText: "Black"
+- tapOn: "Registration number"
+- inputText: "DHAKA-HA-123456"
+- tapOn: "Year"
+- inputText: "2021"
+- hideKeyboard
+- tapOn: "Save"
+- extendedWaitUntil:
+    visible: "Bajaj Pulsar 150.*"
+    timeout: 15000
+# Still missing documents, so the application can't be submitted yet.
+- assertVisible:
+    id: submit-application
+    enabled: false

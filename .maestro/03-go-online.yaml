@@ -1,0 +1,57 @@
+# Approved driver: developer sign-in → permissions → go online → open account menu and trip history → go offline.
+# Needs a staging (or local) backend and an approved demo driver with a vehicle:
+#   maestro test -e EMAIL=<demo driver email> -e PASSWORD=<password> .maestro/03-go-online.yaml
+# The emulator's location must be inside a service zone (e.g. Banani, Dhaka: 23.7937, 90.4066).
+# Maestro can grant foreground location but not "Allow all the time"; if the permissions screen appears, grant
+# background location once by hand on the emulator (Settings → Apps → Rider Driver (Dev) → Location) and rerun.
+appId: bd.rider.driver.dev
+name: Go online and offline
+tags: [e2e]
+---
+- launchApp:
+    permissions:
+      location: allow
+      notifications: allow
+- runFlow:
+    when:
+      visible:
+        id: get-started
+    commands:
+      - tapOn:
+          id: get-started
+      - tapOn:
+          id: dev-sign-in-link
+      - tapOn:
+          id: dev-email
+      - inputText: ${EMAIL}
+      - tapOn:
+          id: dev-password
+      - inputText: ${PASSWORD}
+      - tapOn:
+          id: dev-sign-in-submit
+
+- extendedWaitUntil:
+    visible:
+      id: toggle-online
+    timeout: 20000
+- assertVisible: "Offline"
+- tapOn:
+    id: toggle-online
+- extendedWaitUntil:
+    visible: "Looking for passengers near you…"
+    timeout: 20000
+- assertVisible: "Online"
+
+- tapOn: "Account"
+- tapOn: "Trip history"
+- extendedWaitUntil:
+    visible: "No trips yet|Fare .*"
+    timeout: 15000
+- back
+- back
+
+- tapOn:
+    id: toggle-online
+- extendedWaitUntil:
+    visible: "Go online to start getting offers."
+    timeout: 20000

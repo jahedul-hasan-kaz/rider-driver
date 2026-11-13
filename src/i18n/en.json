@@ -1,0 +1,582 @@
+{
+  "common": {
+    "retry": "Try again",
+    "cancel": "Cancel",
+    "close": "Close",
+    "continue": "Continue",
+    "done": "Done",
+    "loading": "Loading…",
+    "reference": "Reference {{code}}",
+    "save": "Save"
+  },
+  "language": {
+    "en": "English",
+    "bn": "বাংলা",
+    "switchTo": "বাংলা"
+  },
+  "network": {
+    "offline": "You're offline. We'll keep trying.",
+    "backOnline": "Back online"
+  },
+  "boot": {
+    "title": "Getting things ready",
+    "configError": "This build is missing its configuration. Please install an official build.",
+    "foundationReady": "Foundation ready",
+    "environment": "Environment: {{env}}",
+    "signedOut": "Not signed in yet. Sign-in arrives in the next milestone."
+  },
+  "errors": {
+    "generic": "Something went wrong on our side. Please try again.",
+    "NETWORK": "No connection. Check your internet and try again.",
+    "TIMEOUT": "This is taking too long. Please try again.",
+    "ABORTED": "The request was cancelled.",
+    "CONTRACT": "Something went wrong on our side. Please update the app or try again.",
+    "VALIDATION_FAILED": "Please check the highlighted details.",
+    "UNAUTHENTICATED": "Please sign in again.",
+    "SESSION_EXPIRED": "Your session ended. Please sign in again.",
+    "FORBIDDEN": "You can't do that with this account.",
+    "ACCOUNT_SUSPENDED": "Your account is suspended. Contact support for help.",
+    "ROLE_NOT_ALLOWED": "This account can't book rides.",
+    "NOT_FOUND": "We couldn't find that.",
+    "INVALID_STATE_TRANSITION": "This ride has changed. Showing the latest status.",
+    "ACTIVE_REQUEST_EXISTS": "You already have a ride in progress.",
+    "STALE_VERSION": "This changed somewhere else. We've loaded the latest version.",
+    "IDEMPOTENCY_KEY_REUSED": "We're still working on your last request.",
+    "QUOTE_EXPIRED": "Prices were updated. Please check the new fare.",
+    "OUT_OF_SERVICE_AREA": "We're not in this area yet.",
+    "PRICING_UNAVAILABLE": "This ride type isn't available here right now.",
+    "PROMO_INVALID": "This code can't be used for this ride.",
+    "RATE_LIMITED": "Too many attempts. Please wait {{seconds}} seconds.",
+    "INTERNAL": "Something went wrong on our side. Please try again.",
+    "UPSTREAM_UNAVAILABLE": "A service we depend on is having trouble. Please try again soon."
+  },
+  "ui": {
+    "back": "Back",
+    "stepOf": "Step {{step}} of {{total}}",
+    "phoneNumber": "Phone number",
+    "otpLabel": "{{digits}}-digit code",
+    "otpEntered": "{{entered}} of {{digits}} digits entered",
+    "secondsLeft_one": "{{count}} second left",
+    "secondsLeft_other": "{{count}} seconds left",
+    "sos": "SOS emergency",
+    "sosHint": "Press and hold for 2 seconds to alert our safety team",
+    "or": "or"
+  },
+  "app": {
+    "name": "Rider"
+  },
+  "welcome": {
+    "cardsLabel": "Bike rides that beat the jam, 2-minute average pickup, CNG and car with the fare shown first",
+    "bike": "Bike",
+    "bikeSub": "Beat the jam",
+    "pickup": "2 min",
+    "pickupSub": "avg pickup",
+    "cngCar": "CNG · Car",
+    "fareFirst": "Fare shown first",
+    "pages": {
+      "0": {
+        "title": "Drive on your own time.",
+        "body": "Go online when you want, earn on every trip, get paid weekly."
+      },
+      "1": {
+        "title": "See the earning before you accept.",
+        "body": "Every offer shows what you earn, the pickup distance and the trip length."
+      },
+      "2": {
+        "title": "Safety on every trip.",
+        "body": "Passenger PIN check at pickup and SOS one hold away."
+      }
+    },
+    "getStarted": "Get started",
+    "consentPrefix": "By continuing you agree to our",
+    "terms": "Terms",
+    "and": "and",
+    "privacy": "Privacy Policy",
+    "consentSuffix": "."
+  },
+  "auth": {
+    "phoneTitle": "What's your phone number?",
+    "phoneHelp": "We'll text a 6-digit code. Your number stays hidden from drivers — calls are masked.",
+    "masking": "Number masking",
+    "noPassword": "No password",
+    "sendCode": "Send code",
+    "google": "Continue with Google",
+    "invalidPhone": "Enter a valid Bangladeshi mobile number, e.g. 17 1234 5678.",
+    "devSignIn": "Developer sign-in",
+    "devSignInSub": "Development builds only. Use a staging demo account.",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign in",
+    "codeTitle": "Enter the code",
+    "sentTo": "Sent to {{phone}}",
+    "edit": "Edit",
+    "didntGetIt": "Didn't get it?",
+    "resendIn": "Resend in {{time}}",
+    "resend": "Resend code",
+    "verify": "Verify & continue",
+    "nameTitle": "What should drivers call you?",
+    "nameSub": "Your first name is enough.",
+    "nameLabel": "Your name (shown to driver)",
+    "namePlaceholder": "e.g. Rahim",
+    "namePrivacy": "Drivers see only your first name.",
+    "errors": {
+      "rateLimited": "Too many attempts. Try again in {{seconds}} seconds.",
+      "smsDown": "We couldn't send the code. Please try again in a moment.",
+      "signupClosed": "Sign-up with this number isn't open yet. Please try again later.",
+      "wrongCode": "That code isn't right. Check the SMS and try again.",
+      "codeExpired": "This code has expired. Ask for a new one.",
+      "wrongPassword": "Email or password is wrong.",
+      "cancelled": "Sign-in was cancelled.",
+      "network": "No connection. Check your internet and try again.",
+      "unknown": "Something went wrong. Please try again.",
+      "invalidEmail": "That email address doesn't look right."
+    },
+    "emailTitle": "What's your email?",
+    "emailHelp": "We'll email you a 6-digit code. No password needed.",
+    "emailPrivate": "Never shown to drivers",
+    "invalidEmail": "Enter a valid email address, e.g. name@example.com.",
+    "sentToEmail": "Sent to {{phone}} — check your inbox and spam",
+    "usePhone": "Use phone number instead",
+    "useEmail": "Use email instead"
+  },
+  "blocked": {
+    "role": {
+      "title": "This account can't drive",
+      "body": "This account is registered as a passenger or staff account. Use the passenger app, or sign in with another account to drive."
+    },
+    "suspended": {
+      "title": "Your driver account is suspended",
+      "body": "You can't go online right now. Our support team can tell you why and what to do next."
+    },
+    "deactivated": {
+      "title": "This account was deleted",
+      "body": "A deletion request was made for this account. Sign in with another account to drive."
+    },
+    "contactSupport": "Contact support",
+    "otherNumber": "Use another account"
+  },
+  "fare": {
+    "base": "Base fare",
+    "distance": "Distance",
+    "time": "Time",
+    "waiting": "Waiting",
+    "surge": "High demand ×{{x}}",
+    "surgeShort": "High demand",
+    "minimum": "Minimum fare adjustment",
+    "bookingFee": "Booking fee",
+    "rounding": "Rounding",
+    "discount": "Discount",
+    "estimatedTotal": "Estimated total",
+    "total": "Total"
+  },
+  "sos": {
+    "sendingTitle": "Alerting our safety team…",
+    "sentTitle": "Help is on the way",
+    "sentBody": "Our safety team has been alerted with your location — incident #{{no}}.",
+    "call999": "Call 999",
+    "noteLabel": "Add a note for the safety team",
+    "notePlaceholder": "What's happening?",
+    "sendNote": "Send note",
+    "photoTitle": "Add a photo for the safety team (optional)",
+    "takePhoto": "Take photo",
+    "choosePhoto": "Choose photo",
+    "photo": {
+      "added": "Photo added ({{count}}). Our safety team can see it.",
+      "denied": "Camera access is off. Allow it in Settings, or choose a photo instead.",
+      "tooLarge": "That photo is too large (max 15 MB).",
+      "failed": "The photo couldn't be sent. Please try again."
+    },
+    "sent": "SOS sent. Our safety team is on it."
+  },
+  "rate": {
+    "title": "How was your ride?",
+    "comment": "Anything to add? (optional)",
+    "commentLow": "What went wrong? (optional)",
+    "submit": "Submit rating",
+    "thanks": "Thanks for your rating.",
+    "whatWentWrong": "Tell us what went wrong"
+  },
+  "safety": {
+    "title": "Safety",
+    "subtitle": "Help is one hold away on every trip.",
+    "onRide": "You're on a ride",
+    "onRideBody": "Open the ride and press and hold SOS for 2 seconds to alert our safety team.",
+    "openRide": "Open ride",
+    "howTitle": "How SOS works",
+    "how1": "During a ride, press and hold the red SOS button for 2 seconds.",
+    "how2": "Our safety team gets your live position and trip details at once.",
+    "how3": "In danger, also call 999 — the national emergency number.",
+    "contactsTitle": "Trusted contacts",
+    "contactsBody": "Up to 3 people you can share your trip with quickly. Kept on this phone.",
+    "contactName": "Name",
+    "contactPhone": "Mobile number",
+    "addContact": "Add contact",
+    "tipsTitle": "Ride safely",
+    "tipPin": "Pickup code",
+    "tipPinBody": "When asked, tell the driver your 4-digit code so only your driver can start the trip.",
+    "tipMask": "Your number stays private",
+    "tipMaskBody": "Drivers never see your full phone number.",
+    "tipReport": "Report a safety issue",
+    "tipReportBody": "Tell us about anything that made you feel unsafe.",
+    "contactExists": "This number is already a trusted contact."
+  },
+  "support": {
+    "title": "Help & support",
+    "subtitle": "We usually reply within a day.",
+    "new": "New request",
+    "myTickets": "YOUR REQUESTS",
+    "none": "You haven't contacted support yet.",
+    "faqTitle": "Common questions",
+    "faq": {
+      "fare": {
+        "q": "Why was my fare different from the estimate?",
+        "a": "The final fare uses the real distance and time of your trip, plus any waiting. Your receipt shows each part."
+      },
+      "cancel": {
+        "q": "When is there a cancellation fee?",
+        "a": "Cancelling while we search, or shortly after a driver accepts, is free. After that, or once the driver has arrived, a fee may apply — the app always shows it before you confirm."
+      },
+      "lost": {
+        "q": "I left something in the vehicle",
+        "a": "Open the ride from Your rides, tap \"Get help with this trip\" and describe the item. We'll contact the driver."
+      },
+      "cash": {
+        "q": "How do I pay?",
+        "a": "Pay the fare shown on the trip-complete screen to your driver in cash. Digital payments are coming soon."
+      },
+      "account": {
+        "q": "How do I change my name or delete my account?",
+        "a": "Go to Profile to change your name. Settings has Delete account."
+      }
+    },
+    "aboutTrip": "About your trip",
+    "category": "What is it about?",
+    "categories": {
+      "payment": "Payment",
+      "trip": "Trip",
+      "driver": "Driver",
+      "safety": "Safety",
+      "account": "Account",
+      "other": "Other"
+    },
+    "subject": "Subject",
+    "subjectHelp": "A short summary, at least 3 characters.",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Request #{{no}} sent",
+    "reply": "Reply",
+    "replyPlaceholder": "Write a reply",
+    "you": "You",
+    "team": "Support",
+    "closed": "This request is closed. Start a new one if you still need help.",
+    "status": {
+      "open": "Open",
+      "in_progress": "In progress",
+      "pending_user": "Waiting for you",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "phone": "Phone number",
+    "noPhone": "Not added",
+    "language": "Language",
+    "save": "Save changes",
+    "saved": "Profile saved"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Appearance",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "notifications": "Notifications",
+    "notify": {
+      "ride": "Ride updates",
+      "rideBody": "Driver found, arrived, trip finished.",
+      "support": "Support replies",
+      "supportBody": "When our team answers you.",
+      "offers": "Offers",
+      "offersBody": "Promotions and discounts. Off by default."
+    },
+    "safetyAlways": "Safety messages are always on.",
+    "version": "Version",
+    "signOut": "Sign out",
+    "delete": "Delete account"
+  },
+  "deleteAccount": {
+    "title": "Delete account",
+    "whatHappens": "What happens",
+    "step1": "You're signed out and can't use this account again.",
+    "step2": "Your name and contact details are removed after the legal retention period.",
+    "step3": "Payment and safety records are kept, as the law requires.",
+    "reason": "Why are you leaving? (optional)",
+    "word": "DELETE",
+    "typeWord": "Type {{word}} to confirm",
+    "confirm": "Delete my account",
+    "dues": "You owe a cancellation fee. Take one more ride (it's added to the fare) or contact support, then try again.",
+    "activeRide": "You have a ride in progress. Finish or cancel it first."
+  },
+  "driverAuth": {
+    "nameTitle": "Your full name",
+    "nameSub": "Exactly as it is on your driving licence",
+    "nameLabel": "Full name",
+    "namePlaceholder": "e.g. Md. Rahim Uddin",
+    "namePrivacy": "Our review team checks this against your documents. Passengers see only your first name."
+  },
+  "permissions": {
+    "title": "Before you go online",
+    "body": "Rider needs these to send you offers and to measure trips fairly.",
+    "location": "Precise location",
+    "locationBody": "To match you with nearby passengers and guide pickups.",
+    "backgroundIos": "Location: Always",
+    "backgroundAndroid": "Location: Allow all the time",
+    "backgroundBody": "So offers keep coming with the screen off. Only used while you are online.",
+    "notifications": "Notifications",
+    "notificationsBody": "So an offer can ring even when the app is in the background.",
+    "recommended": "recommended",
+    "allow": "Allow",
+    "openSettings": "Open Settings",
+    "account": "Account and support",
+    "battery": "Tip: set battery use for Rider Driver to \"Unrestricted\" so the phone does not stop it while you drive."
+  },
+  "onboarding": {
+    "title": "Your application",
+    "subtitle": "Complete each item, then submit for review",
+    "you": "You",
+    "licence": "Driving licence",
+    "needed": "Needed",
+    "vehicle": "Vehicle",
+    "addVehicle": "Add your vehicle",
+    "submit": "Submit for review",
+    "done": "Start driving",
+    "progress": "{{done}} of {{total}} done",
+    "status": {
+      "submitted": "Submitted",
+      "submittedBody": "We received your application. Review usually takes 1–2 working days.",
+      "review": "Under review",
+      "reviewBody": "Our team is checking your documents. We will notify you.",
+      "rejected": "Changes needed",
+      "rejectedBody": "Some items need fixing. Update them and submit again.",
+      "approved": "Approved",
+      "approvedBody": "You are ready to drive. Keep your documents up to date here."
+    }
+  },
+  "details": {
+    "number": "Licence number",
+    "expiry": "Expiry date (YYYY-MM-DD)",
+    "expiryInvalid": "Enter a future date as YYYY-MM-DD",
+    "privacy": "Only the last digits are shown in the app. Your full number is visible only to the review team."
+  },
+  "vehicle": {
+    "addTitle": "Add vehicle",
+    "editTitle": "Edit vehicle",
+    "category": "Vehicle type",
+    "make": "Make",
+    "model": "Model",
+    "color": "Colour",
+    "registration": "Registration number",
+    "year": "Year"
+  },
+  "documents": {
+    "hint": "A clear photo of the whole document",
+    "tips": "Lay it flat in good light, with all four corners visible and no glare.",
+    "camera": "Take photo",
+    "file": "Choose file",
+    "preview": "Selected document",
+    "upload": "Upload",
+    "expiry": "Expiry date (YYYY-MM-DD)",
+    "expires": "Expires {{date}}",
+    "problem": {
+      "too_big": "That file is over 10 MB. Try a photo instead.",
+      "wrong_type": "Use a JPEG, PNG, WebP photo or a PDF.",
+      "cancelled": "Cancelled."
+    },
+    "types": {
+      "national_id": "National ID (NID)",
+      "driving_licence": "Driving licence",
+      "profile_photo": "Profile photo",
+      "vehicle_registration": "Vehicle registration",
+      "fitness_certificate": "Fitness certificate",
+      "tax_token": "Tax token",
+      "insurance": "Insurance",
+      "route_permit": "Route permit"
+    },
+    "state": {
+      "missing": "Upload",
+      "pending": "In review",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "expired": "Expired"
+    }
+  },
+  "tracking": {
+    "title": "You are online",
+    "body": "Rider Driver is using your location to send you offers.",
+    "tripBody": "Trip in progress — location shared with your passenger."
+  },
+  "home": {
+    "online": "Online",
+    "offline": "Offline",
+    "account": "Account",
+    "today": "Today",
+    "earnings": "Earnings",
+    "waiting": "Looking for passengers near you…",
+    "goOnlineHint": "Go online to start getting offers.",
+    "goOnline": "Go online",
+    "goOffline": "Go offline",
+    "owesTitle": "Commission due",
+    "owesBody": "You owe cash commission to Rider. Pay it to keep getting offers."
+  },
+  "offer": {
+    "title": "New trip offer",
+    "youEarn": "You earn",
+    "youEarnA11y": "You earn {{amount}}",
+    "pickup": "Pickup",
+    "dropoff": "Drop-off",
+    "pin": "Pin on the map",
+    "passenger": "Passenger: {{name}}",
+    "accept": "Accept",
+    "decline": "Decline",
+    "gone": "This offer is no longer available.",
+    "spoken": "New trip. {{amount}} taka.",
+    "pay": {
+      "cash": "Cash",
+      "bkash": "bKash",
+      "nagad": "Nagad",
+      "card": "Card",
+      "wallet": "Wallet"
+    }
+  },
+  "trip": {
+    "pickup": "Pickup",
+    "dropoff": "Drop-off",
+    "navigate": "Navigate",
+    "passenger": "Passenger",
+    "cancel": "Cancel trip",
+    "noShow": "Passenger did not come — cancel",
+    "cancelTitle": "Cancel this trip?",
+    "cancelBody": "Frequent cancellations lower your acceptance score.",
+    "cancelledToast": "This trip was cancelled.",
+    "status": {
+      "driver_assigned": "Head to pickup",
+      "driver_arriving": "On the way",
+      "arrived": "At pickup",
+      "in_progress": "On trip",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "next": {
+      "arriving": "Start driving to pickup",
+      "arrived": "I've arrived",
+      "start": "Start trip",
+      "complete": "Complete trip"
+    },
+    "far": {
+      "title": "You're not at the pickup yet",
+      "body": "Your location is far from the pickup point. Mark arrived only if you are really there.",
+      "confirm": "I'm here — mark arrived"
+    },
+    "pin": {
+      "title": "Ask for the passenger's PIN",
+      "body": "The passenger sees a 4-digit PIN in their app. Enter it to start.",
+      "INVALID_PIN_one": "Wrong PIN. {{count}} try left.",
+      "INVALID_PIN_other": "Wrong PIN. {{count}} tries left.",
+      "PIN_LOCKED": "Too many wrong PINs. Contact support.",
+      "PIN_REQUIRED": "Enter the PIN."
+    },
+    "reasons": {
+      "passenger_asked": "Passenger asked me to cancel",
+      "unsafe": "I feel unsafe",
+      "vehicle_problem": "Vehicle problem",
+      "other": "Other reason"
+    }
+  },
+  "complete": {
+    "title": "Trip complete",
+    "subtitle": "Nice work",
+    "collect": "Collect from passenger",
+    "fare": "Fare",
+    "total": "Total",
+    "collected": "I collected {{amount}}",
+    "differentAmount": "Passenger paid a different amount",
+    "amountLabel": "Amount collected (৳)",
+    "amountInvalid": "Enter an amount like 250 or 250.50",
+    "amountNote": "A different amount is checked by our team.",
+    "backHome": "Back to home",
+    "thanks": "Cash recorded. Thanks!"
+  },
+  "earnings": {
+    "title": "Earnings",
+    "today": "Today",
+    "unpaid": "Unpaid",
+    "wallet": "Wallet and payouts",
+    "emptyTitle": "No trips yet",
+    "emptyBody": "Your earnings appear here after each trip.",
+    "fareLine": "Fare {{fare}} · commission {{commission}}",
+    "more": "Show more",
+    "payout": {
+      "unpaid": "Unpaid",
+      "in_payout": "In payout",
+      "paid": "Paid"
+    }
+  },
+  "wallet": {
+    "title": "Wallet",
+    "balance": "Balance",
+    "owes": "A negative balance is cash commission you owe Rider.",
+    "openPayout": "Payout of {{amount}}: {{status}}",
+    "payoutAccount": "Payout account",
+    "noAccount": "No payout account yet.",
+    "add": "Add account",
+    "change": "Change account",
+    "holder": "Account holder name",
+    "walletNumber": "Wallet number",
+    "bankRef": "Bank account details",
+    "saved": "Payout account saved",
+    "methods": {
+      "bkash": "bKash",
+      "nagad": "Nagad",
+      "bank": "Bank"
+    }
+  },
+  "account": {
+    "title": "Account",
+    "earnings": "Earnings",
+    "wallet": "Wallet",
+    "documents": "Documents and vehicle",
+    "safety": "Safety",
+    "support": "Help and support",
+    "profile": "Profile",
+    "settings": "Settings",
+    "trips": "Trip history"
+  },
+  "driverSafety": {
+    "sosTitle": "If something goes wrong on a trip",
+    "sos1": "Hold the red SOS button on the trip screen.",
+    "sos2": "Our safety team gets your live location and trip details at once.",
+    "sos3": "Call 999 if you are in immediate danger.",
+    "call999": "Call 999",
+    "callSupport": "Call Rider support"
+  },
+  "driverSettings": {
+    "voice": "Read offers aloud",
+    "voiceBody": "Hear the earning when an offer arrives.",
+    "support": "Support replies",
+    "supportBody": "Notify me when support answers.",
+    "always": "Offer, trip, account and payout notifications are always on."
+  },
+  "driverRate": {
+    "title": "Rate your passenger"
+  },
+  "trips": {
+    "title": "Trip history",
+    "subtitle": "Completed and cancelled trips",
+    "emptyTitle": "No trips yet",
+    "emptyBody": "Finished trips appear here.",
+    "detailTitle": "Trip details",
+    "report": "Report a problem with this trip",
+    "earned": "you earned {{net}}"
+  }
+}
